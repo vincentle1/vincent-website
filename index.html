@@ -4,25 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Vincent's Website</title>
+    <!--Normalize-->
     <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/style-sheet.css">
+    <!--Link to font-awesome icons-->
+    <script src="https://kit.fontawesome.com/2127b6ec58.js" crossorigin="anonymous"></script>
+    <!--Link to mobile stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="assets/stylesheet-mobile.css">
+    <!--Link to desktop stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1920px)" href="assets/stylesheet-desktop.css">
+    <!--Link to common stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheet-all.css">
+    <!--Link to font-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Nunito:400,900" rel="stylesheet">
+
   </head>
 
   <body>
   <header>
     <nav>
-      <ul class="left">
-        <li>Vincent Le</li>
+      <ul class="topBar">
+        <li class="name">Vincent Le</li> 
+        <li class="toggle"><i id="hamburger" class="fas fa-bars"></i><span>Close</span></li>
       </ul>
 
-      <ul class="right">
-        <li><a href="#aboutMe">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="links">
+        <li class="about"><a href="#aboutMe">About</a></li>
+        <li class="projects"><a href="#projects">Projects</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <div class="allSections">
   <section id="aboutMe">
     <div class="profile">
       <!--My profile picture-->
@@ -52,13 +65,14 @@
   <section id="contact">
     <h2>Contact</h2>
   </section>
+</div>
      
 <footer>
   <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
     and <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik</a> from 
     <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
 </footer>
-    
+<!--Link to scriptsheet-->
 <script src="scripts/script-sheet.js"></script>
   </body>
 </html> 

@@ -1,0 +1,101 @@
+/* Note: h1 = 32px, h2 = 24px, h3 = 18.72px
+
+/* Box-sizing makes box calculated from margin + padding. */
+*{    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+/***************** Nav Bar *************************/
+
+header{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    margin: 0px;
+}
+
+nav{
+    box-shadow: 0px 3px 5px 0px #A3A3A3;
+    z-index: 2;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul.topBar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul.topBar .name{
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 5px;
+    visibility: visible;
+}
+
+nav ul.topBar li.toggle{
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 2px solid #d0d0d0;
+    display: block;
+    cursor: pointer;
+    
+}
+
+nav ul.topBar li.toggle i#hamburger{
+    display: block;
+}
+
+nav ul.topBar li.toggle span{
+    display: none;
+}
+
+nav ul.links{
+    font-size: 24px;
+    display: none;
+    background-color: white;
+}
+
+nav ul.links > li{
+    margin-top: -1px;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid #A3A3A3;   
+}
+
+nav ul.links > li.contact{
+    border-top: 0px;
+}
+
+.openLinks{
+    display: block;
+}
+
+.expandTopBar{
+    background-color: "#E1E1E1";
+    visibility: none;
+    
+}
+
+/***************** End of Nav Bar *****************/
+
+div.allSections{
+z-index: 1;
+}
+#aboutMe{
+    margin: 10px 20px 10px 20px;
+}
