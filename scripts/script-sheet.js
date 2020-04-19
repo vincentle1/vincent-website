@@ -1,27 +1,30 @@
 
 function toggleMenu(){
+    
+    navMenu.classList.toggle("expandMenu");
+    menuButton.classList.toggle("close");
+    topBar.classList.toggle("changeTopBar");
 
-    const links = document.querySelector("nav ul.links");
-    const topBar = document.querySelector(".topBar");
-    const menuButton = document.querySelector('li.toggle');
-    const name = const name = document.querySelector('li.name');
-    links.classList.toggle("openLinks");
-    topBar.classList.toggle("expandTopBar");
+}
 
-    menuButton.addEventListener('click', toggleMenu); 
+const navMenu = document.querySelector(".navMenu");
+const menuButton = document.querySelector("li.switch");
+const topBar = document.querySelector(".topBar");
 
-    if (menuButton.id == "closed"){
-    /* 1. Toggle between Hamburger and Close */
+menuButton.addEventListener("click", toggleMenu); 
+
+    /* 1. Toggle between Hamburger and Close 
         menuButton.setAttribute("id", "open");
         hamburger.style.display = "none";
         closeBar.setAttribute("style", 
         "display: block; font-size: 24px, padding-right: 20px");
     /* 2. Make name appear and disappear */
-        name.style.visibility = "hidden";
-    /* 3. Make background color gray for top bar */
+       /* name.style.visibility = "hidden";
+    /* 3. Make background color gray for top bar 
         topBar.style.backgroundColor = "#E1E1E1";
         menuButton.style.border = "none";
 }
+*/
 
 
 
