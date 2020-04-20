@@ -20,26 +20,29 @@
   </head>
 
   <body>
-  <header>
-    <nav>
-      <ul class="topBar">
-        <li class="name">Vincent Le</li> 
-        <li class="toggle" id="closed"><i id="hamburger" class="fas fa-bars"></i><span>Close</span></li>
-      </ul>
+    
+  <!--Secret black overlay-->
+  <div class="overlay"></div>
 
-      <ul class="links">
-        <li class="about"><a href="#aboutMe">About</a></li>
-        <li class="projects"><a href="#projects">Projects</a></li>
-        <li class="contact"><a href="#contact">Contact</a></li>
-      </ul>
+  <header>
+  <ul class="nameAndButton">
+  <li class="name">Vincent Le</li> 
+  <li class="toggleButton"><i id="burger" class="fas fa-bars"></i><span>Close</span></li>
+  </ul>
+
+    <nav class="headerLinks">
+        <ul class="links">
+        <li class="about"><a href="#aboutMe"><div>About</div></a></li>
+        <li class="projects"><a href="#projects"><div>Projects</div></a></li>
+        <li class="contact"><a href="#contact"><div>Contact</div></a></li>
+        </ul>
     </nav>
   </header>
-
   <div class="allSections">
   <section id="aboutMe">
     <div class="profile">
       <!--My profile picture-->
-     <img src="assets/images/avatar.jpg" alt="Picture of Vincent" width="100" height="100">
+     <img class="myPicture" src="assets/images/avatar.jpg" alt="Picture of Vincent" width="100" height="100">
      <!--Link to my github-->
      <a href="https://github.com/vincentle1?tab=repositories"><img src="assets/images/github-logo.svg" 
       alt="link to github" width="50" height="50"></a>

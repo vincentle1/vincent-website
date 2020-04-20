@@ -1,91 +1,136 @@
 /* Note: h1 = 32px, h2 = 24px, h3 = 18.72px
 
 /* Box-sizing makes box calculated from margin + padding. */
-*{    box-sizing: border-box;
+*{  box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
     font-family: "Nunito", sans-serif;
+    position: relative;
+}
+
+.overlay{
+    display:none;
+    background-color: black;
+    opacity: 35%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
 /***************** Nav Bar *************************/
-
 header{
-    width: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 1;
     top: 0px;
-    margin: 0px;
-}
-
-nav{
-    box-shadow: 0px 3px 5px 0px #A3A3A3;
-}
-
-nav ul{
-    list-style-type: none;
-}
-
-nav ul li a{
-    text-decoration: none;
-}
-
-ul.topBar{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.name{
-    font-weight: bold;
-    font-size: 28px;
-    padding-top: 5px;
-    visibility: visible;
-}
-
-li.toggle{
-    font-size: 18px;
-    padding: 8px;
-    border-radius: 5px;
-    margin-right: 20px;
-    border: 2px solid #d0d0d0;
-    display: block;
-    cursor: pointer;
+    width: 100%;
+    background-color: white;
     
 }
 
-i#hamburger{
-    display: block;
+.nameAndButton{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgb(199, 199, 199);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.name{
+    padding-bottom: 2px;
+}
+
+.toggleButton{
+    font-size: 20px; 
+    display: inline-block;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: 5px 9px 3px 9px;
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
 }
 
 span{
     display: none;
 }
 
-nav ul.links{
-    font-size: 24px;
+
+header li{
+    list-style-type: none;
+}
+
+header li a{
+    text-decoration: none;
+}
+
+
+nav{
     display: none;
-    background-color: white;
 }
 
-nav ul.links > li{
-    margin-top: -1px;
-    padding: 10px;
-    padding-left: 20px;
-    border: 1px solid #A3A3A3;   
+.links{
+    text-align: center;
+    font-size: 24px;
 }
 
-nav ul.links > li.contact{
-    border-top: 0px;
+.links li{
+    border-bottom: 1px solid rgb(199, 199, 199); 
+    padding: 0px;
 }
 
+.links li div{
+    padding: 10px 20px 10px 0px;
+}
+
+
+
+/************************* JS Actions ******************************/
+.expand{
+>>>>>>> current
+    display: block;
+    text-align: right;
+}
+
+.disappear{
+    display: none;
+}
+
+.addColor{
+    background-color: rgb(241, 241, 241);
+}
+
+.removePadding{
+    padding: 0px;
+}
+
+.grow{
+    flex-grow: 1;
+    margin: 0px;
+    border: none;
+    padding: 10px 20px 10px;
+}
+
+.dim{
+    display: block;
+}
+
+/************************End of actions*******************************/
 
 /***************** End of Nav Bar *****************/
 
 div.allSections{
-z-index: 1;
+    z-index: -1;
+    margin-top: 90px;
 }
+
 #aboutMe{
     margin: 10px 20px 10px 20px;
 }
