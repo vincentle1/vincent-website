@@ -13,6 +13,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: white;
+    top: 0;
 }
 
 .nameAndButton{
@@ -106,6 +107,7 @@ nav{
 
 div.allSections{
 z-index: 1;
+margin-top: 110px;
 }
 #aboutMe{
     margin: 10px 20px 10px 20px;
