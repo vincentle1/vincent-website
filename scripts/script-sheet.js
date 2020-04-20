@@ -5,14 +5,12 @@ const close = document.querySelector("span");
 const name = document.querySelector(".name");
 const topBar = document.querySelector(".nameAndButton");
 const content = document.querySelector(".allSections");
-const overlay = document.querySelector(".overlay");
 
 function toggleMenu(){
 
     navLinks.classList.toggle("expand");
     close.classList.toggle("expand");
     topBar.classList.toggle("expand");
-    overlay.classList.toggle("expand");
 
     burger.classList.toggle("disappear");
     name.classList.toggle("disappear");

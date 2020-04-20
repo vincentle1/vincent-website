@@ -10,18 +10,6 @@ body{
     position: relative;
 }
 
-.overlay{
-    display:none;
-    background-color: black;
-    opacity: 35%;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 0;
-}
 /***************** Nav Bar *************************/
 header{
     position: fixed;
@@ -50,7 +38,7 @@ header{
 
 .toggleButton{
     font-size: 20px; 
-    display: inline-block;
+    display: flex;
     border: 1px solid rgb(199, 199, 199);
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
@@ -112,15 +100,13 @@ nav{
 }
 
 .grow{
-    flex-grow: 1;
+    justify-content: right;
     margin: 0px;
     border: none;
     padding: 10px 20px 10px;
 }
 
-.dim{
-    display: block;
-}
+
 
 /************************End of actions*******************************/
 
@@ -128,7 +114,7 @@ nav{
 
 div.allSections{
 z-index: 1;
-margin-top: 110px;
+margin-top: 90px;
 }
 
 #aboutMe{
