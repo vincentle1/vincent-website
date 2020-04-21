@@ -16,7 +16,7 @@ header{
     z-index: 1;
     top: 0px;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.972);
     top: 0;
 }
 
@@ -29,7 +29,7 @@ header{
     padding-bottom: 10px;
     padding-right: 20px;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .name{
@@ -37,11 +37,12 @@ header{
 }
 
 .toggleButton{
+    z-index: 2;
     font-size: 20px; 
     border: 1px solid rgb(199, 199, 199);
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(241, 241, 241, 0.657);
     cursor: pointer;
 }
 
@@ -56,53 +57,50 @@ header li{
 
 header li a{
     text-decoration: none;
+    padding: 5px 10px 5px 0px;
+    border-bottom: solid;
 }
 
-
-nav{
-    display: none;
-}
 
 .links{
-    text-align: center;
-    font-size: 24px;
+    display: none;
+    height: 100vh;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    width: 20%;
+
 }
 
-.links li{
-    border-bottom: 1px solid rgb(199, 199, 199); 
-    padding: 0px;
+.links li{ 
+    padding: 0px 0px 20px 20px;
 }
-
-.links li div{
-    padding: 10px 20px 10px 0px;
-}
-
 
 
 /************************* JS Actions ******************************/
 .expand{
 
     display: block;
-    text-align: right;
+
 }
 
 .disappear{
     display: none;
 }
 
-.addColor{
-    background-color: rgb(241, 241, 241);
+.invisible{
+    visibility: hidden;
 }
 
-.removePadding{
-    padding: 0px;
+
+.removeBorder{
+    border: none;
 }
 
 .grow{
-    justify-content: right;
+    
     margin: 0px;
-    border: none;
-    padding: 10px 20px 10px;
+    padding: 6px 10px 6px 10px;
 }
 
 
@@ -112,7 +110,7 @@ nav{
 /***************** End of Nav Bar *****************/
 
 div.allSections{
-z-index: 1;
+z-index: 0;
 margin-top: 90px;
 }
 
