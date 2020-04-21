@@ -5,11 +5,12 @@ const close = document.querySelector("span");
 const name = document.querySelector(".name");
 const topBar = document.querySelector(".nameAndButton");
 const content = document.querySelector(".allSections");
+const specificNavLinks = document.querySelectorAll(".links li a");
 
 function toggleMenu(){
 
     navLinks.classList.toggle("expand");
-    close.classList.toggle("expand");
+    close.classList.toggle("closeAppear");
 
     burger.classList.toggle("disappear");
     name.classList.toggle("invisible");
@@ -22,7 +23,10 @@ function toggleMenu(){
 toggleButton.addEventListener("click", toggleMenu);
 
 /*After clicking on link, close the nav*/
-navLinks.addEventListener("click", toggleMenu);
+specificNavLinks.forEach(function(navLink){
+    navLink.addEventListener("click", toggleMenu)});
+
+
 
 
 

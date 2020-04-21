@@ -16,11 +16,11 @@ header{
     z-index: 1;
     top: 0px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.972);
     top: 0;
 }
 
 .nameAndButton{
+    background-color: rgba(255, 255, 255, 0.904);
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid rgb(199, 199, 199);
@@ -58,17 +58,19 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
-    border-bottom: solid;
 }
 
+.headerLinks{
+    /*background-color: rgba(255, 255, 255, 0.904);*/
+}
 
 .links{
     display: none;
     height: 100vh;
-    text-align: left;
+    text-align: center;
     font-size: 28px;
     font-weight: bold;
-    width: 20%;
+    width: 100%;
 
 }
 
@@ -78,35 +80,56 @@ header li a{
 
 
 /************************* JS Actions ******************************/
-.expand{
+.closeAppear{
 
     display: block;
+}
+
+.expand{
+    display: block;
+    animation-name: fadein;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 
 }
 
 .disappear{
     display: none;
+    
 }
 
 .invisible{
     visibility: hidden;
+    
 }
 
 
 .removeBorder{
     border: none;
+    
 }
 
 .grow{
-    
     margin: 0px;
     padding: 6px 10px 6px 10px;
+    
 }
 
 
 
 /************************End of actions*******************************/
-
+/*Animation*/
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.904);
+    }
+  }
 /***************** End of Nav Bar *****************/
 
 div.allSections{
