@@ -115,6 +115,10 @@ header li a{
     
 }
 
+.addShadow{
+    box-shadow:0px 5px 5px rgb(187, 187, 187);
+}
+
 
 
 /************************End of actions*******************************/
