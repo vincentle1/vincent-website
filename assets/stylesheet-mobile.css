@@ -10,6 +10,7 @@ body{
     position: relative;
 }
 
+
 /***************** Nav Bar *************************/
 header{
     position: fixed;
@@ -22,7 +23,7 @@ header{
 /*header dimensions 759.2x53.4*/
 
 .nameAndButton{
-    background-color: #032325;
+    background: linear-gradient(90deg, #044275 30%,#05ca7f);
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -41,7 +42,7 @@ header{
 .toggleButton{
     z-index: 2;
     font-size: 20px; 
-    border: 1px solid rgb(199, 199, 199);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
     cursor: pointer;
@@ -59,10 +60,6 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
-}
-
-.headerLinks{
-    /*background-color: rgba(255, 255, 255, 0.904);*/
 }
 
 .links{
@@ -88,10 +85,12 @@ header li a{
 
 .expand{
     display: block;
+}
+
+.animate{
     animation-name: fadein;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-
 }
 
 .disappear{
@@ -107,7 +106,7 @@ header li a{
 
 .removeBorder{
     border: none;
-    
+    background: none;
 }
 
 .grow{
@@ -120,6 +119,10 @@ header li a{
     box-shadow:0px 3px 5px #032325c5;
 }
 
+.disableScroll{
+    overflow: hidden;
+    box-shadow: none;
+}
 
 
 /************************End of actions*******************************/
@@ -132,7 +135,7 @@ header li a{
   
     to {
         opacity: 1;
-        background-color: rgba(255, 255, 255, 0.986);
+        background: linear-gradient(180deg, #044275 30%,#05ca7f);
     }
   }
 /***************** End of Nav Bar *****************/
@@ -146,18 +149,22 @@ div.allSections{
     margin-top: 0px;
     padding: 90px 20px 20px 20px; 
 }
+.myPicture{
+    border-radius: 100px;
+}
 /*********End of About Me*******************/
 
 
 /********************* Projects section ******************/
 #projects{
     padding: 20px;
-    background-color: rgb(209, 232, 246);
+    background-color: #025aa326;
 }
 
 #projects img{
     border-radius: 10px;
 }
+
 
 #projects h2{
 
@@ -166,11 +173,15 @@ div.allSections{
     background-color: rgb(100, 223, 147);
 }
 
+div.project1{
+    margin-top: 20px !important;
+}
+
 #projects div{
     margin-top: 30px;
 }
 
-#
+
 /******************* End of Projects Section *************/
 
 
