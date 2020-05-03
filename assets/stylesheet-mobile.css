@@ -11,6 +11,10 @@ body{
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 /***************** Nav Bar *************************/
 header{
@@ -34,8 +38,6 @@ header{
     padding-right: 20px;
     font-weight: bold;
     font-size: 24px;
-    border-bottom: 1px solid #00744898;
-    
 }
 
 .name{
@@ -51,6 +53,7 @@ header{
     cursor: pointer;
 }
 
+
 span{
     display: none;
 }
@@ -63,6 +66,12 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
+    color: white;
+
+}
+
+header li a:active{
+    color: #05ca7f;
 }
 
 .links{
@@ -154,6 +163,11 @@ div.allSections{
     padding: 90px 20px 20px 20px; 
     background-color: #075ca1;
     color: white;
+    font-size: 18px;
+}
+
+#aboutMe p{
+    line-height: 1.5;
 }
 
 div.myPictureContainer{
@@ -170,6 +184,10 @@ div.aboutMeLinks{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+div.aboutMeLinks a{
+    outline-color: rgb(245, 255, 245);
 }
 
 .gitLink{
@@ -195,26 +213,24 @@ div.aboutMeLinks{
     margin-top: 10px;
 }
 
-.gitLink:hover{
-    box-shadow: none;
-    border: 2px solid #043f6e;
+
+.gitLink:hover, .cv:hover{
+    background-color: #049e63;
+
 }
 
-
-.gitLink:active{
+.gitLink:active, .cv:active{
     box-shadow: none;
-    border: 2px solid #043f6e;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    background-color: #015736;
 }
 
-.cv:hover{
-    box-shadow: none;
-    border: 2px solid #043f6e;
+.gitLink:focus, .cv:focus{
+    border: 4px solid #043f6e;
 }
 
-.cv:active{
-    box-shadow: none;
-    border: 2px solid #043f6e;
-}
 
 
 /*********End of About Me*******************/
@@ -232,10 +248,43 @@ div.aboutMeLinks{
 
 
 #projects h2{
-
+    font-size: 32px;
 }
+
+#projects h3{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
 #projects a{
-    background-color: rgb(100, 223, 147);
+    background-color: #0ada8a;
+    outline-color: rgb(18, 117, 230);
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0, 0.2);
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+#projects a:hover{
+    background-color: #049e63;
+}
+
+#projects a:active{
+        box-shadow: none;
+        position: relative;
+        top: 3px;
+        left: 3px;
+        background-color: #015736;
+}
+
+#projects p{
+    padding-top: 3px;
+    font-size: 18px;
 }
 
 div.project1{
@@ -243,7 +292,7 @@ div.project1{
 }
 
 #projects div{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
@@ -262,6 +311,13 @@ footer{
     background-color: #044275;
     color: white;
 }
+
+footer a:active, footer a:visited, footer a:link{
+    color: #0ada8a;
+}
+
+
+
 
 /******************** End of contact me and footer **************/
 
