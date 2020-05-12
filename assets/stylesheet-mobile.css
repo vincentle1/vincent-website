@@ -13,6 +13,7 @@ body{
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 
 
@@ -257,13 +258,13 @@ div.aboutMeLinks a{
 }
 
 #projects a{
-    background-color: #0ada8a;
+    background-color: #07d687;
     outline-color: rgb(18, 117, 230);
     text-decoration: none;
     font-weight: bold;
     color: black;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0px 4px 6px rgba(0,0,0, 0.2);
     display: inline-block;
     margin-top: 7px;
