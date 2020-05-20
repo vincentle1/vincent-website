@@ -23,8 +23,6 @@ header{
     z-index: 1;
     top: 0px;
     width: 100%;
-    top: 0;
-    
 }
 /*header dimensions 759.2x53.4*/
 
@@ -66,6 +64,7 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
+    color: black;
 }
 
 header li a:visited{
@@ -179,6 +178,7 @@ div.myPictureContainer{
 .myPicture{
     height: 400px;
 }
+
 div.aboutMeLinks{
     display: flex;
     justify-content: center;
@@ -222,11 +222,6 @@ div.aboutMeLinks{
     background: rgb(246, 246, 246);
     
 }
-
-#projects img{
-    border-radius: 10px;
-}
-
 
 #projects h2{
     font-size: 32px;
@@ -275,10 +270,33 @@ div.project1{
 }
 
 #projects div{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
+.picture1, .picture2, .picture3, .picture4{
+    display: inline-block;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 215px;
 
+}
+
+.picture1{
+    background-image: url("../assets/images/ptsd-poster/ptsd-poster.svg");
+}
+
+.picture2{
+    background-image: url("../assets/images/blog/Cover.png");
+}
+
+.picture3{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
+
+.picture4{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
 /******************* End of Projects Section *************/
 
 
@@ -302,5 +320,3 @@ footer a:active, footer a:visited, footer a:link{
 
 
 /******************** End of contact me and footer **************/
-
-/* Fill out contact section with links to all socials */

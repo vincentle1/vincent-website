@@ -1,5 +1,5 @@
 /* Note: h1 = 32px, h2 = 24px, h3 = 18.72px
-Color scheme: e3e7af, 7ddf64, c2f9bb, 032325
+Color scheme: #00A82D default
 /* Box-sizing makes box calculated from margin + padding. */
 *{  box-sizing: border-box;
     padding: 0;
@@ -23,15 +23,12 @@ header{
     z-index: 1;
     top: 0px;
     width: 100%;
-    top: 0;
-    
 }
 /*header dimensions 759.2x53.4*/
 
 .nameAndButton{
-    background: linear-gradient(90deg, #044275 30%,#05ca7f);
+    background: white;
     display: flex;
-    color: white;
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 20px;
@@ -47,8 +44,7 @@ header{
 
 .toggleButton{
     z-index: 2;
-    font-size: 20px; 
-    border: 1px solid rgb(255, 255, 255);
+    font-size: 24px; 
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
     cursor: pointer;
@@ -67,12 +63,15 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
-    color: white;
+    color: black;
+}
 
+header li a:visited{
+    color: black;
 }
 
 header li a:active{
-    color: #05ca7f;
+    color: #00A82D;
 }
 
 .links{
@@ -129,7 +128,7 @@ header li a:active{
 }
 
 .addShadow{
-    box-shadow:0px 3px 5px #032325c5;
+    box-shadow:0px 3px 5px #7c7c7cc5;
 }
 
 .disableScroll{
@@ -149,7 +148,77 @@ header li a:active{
   
     to {
         opacity: 1;
-        background: linear-gradient(180deg, #044275 30%,#05ca7f);
+        background: white;
     }
   }
 /***************** End of Nav Bar *****************/
+
+/*********picture and links*******/
+#projectMainLinks{
+padding: 50px 20px 10px 20px;
+border-bottom: 2px solid black;
+    
+}
+
+.projectMainPicture{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.linkContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.linkContainer a{
+    background-color: #00A82D;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;  
+    padding: 15px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+/******End picture and links *********/
+
+/*****Body*******/
+#bodyText{
+    padding: 20px;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 18px;
+}
+
+li{
+    list-style-type:none;
+}
+
+h2{
+    text-decoration: underline solid black 3px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/*****footer*****/
+footer{
+    padding: 10px;
+    border-bottom: none;
+    background-color: black;
+    color: white;
+}
+
+footer a:active, footer a:visited, footer a:link{
+    color: #14CC45;
+}
+/****End footer******/
