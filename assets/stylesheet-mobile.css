@@ -1,5 +1,5 @@
 /* Note: h1 = 32px, h2 = 24px, h3 = 18.72px
-Color scheme: e3e7af, 7ddf64, c2f9bb, 032325
+Color scheme: #14CC45 highlight; #00A82D default;
 /* Box-sizing makes box calculated from margin + padding. */
 *{  box-sizing: border-box;
     padding: 0;
@@ -29,9 +29,8 @@ header{
 /*header dimensions 759.2x53.4*/
 
 .nameAndButton{
-    background: linear-gradient(90deg, #044275 30%,#05ca7f);
+    background: white;
     display: flex;
-    color: white;
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 20px;
@@ -47,8 +46,8 @@ header{
 
 .toggleButton{
     z-index: 2;
-    font-size: 20px; 
-    border: 1px solid rgb(255, 255, 255);
+    font-size: 24px; 
+    /*border: 2px solid rgb(0, 0, 0);*/
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
     cursor: pointer;
@@ -67,12 +66,14 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
-    color: white;
+}
 
+header li a:visited{
+    color: black;
 }
 
 header li a:active{
-    color: #05ca7f;
+    color: #00A82D;
 }
 
 .links{
@@ -129,7 +130,7 @@ header li a:active{
 }
 
 .addShadow{
-    box-shadow:0px 3px 5px #032325c5;
+    box-shadow:0px 3px 5px #7c7c7cc5;
 }
 
 .disableScroll{
@@ -149,7 +150,7 @@ header li a:active{
   
     to {
         opacity: 1;
-        background: linear-gradient(180deg, #044275 30%,#05ca7f);
+        background: white;
     }
   }
 /***************** End of Nav Bar *****************/
@@ -160,10 +161,9 @@ div.allSections{
 }
 /***********About Me*************************/
 #aboutMe{
-    margin-top: 0px;
-    padding: 90px 20px 20px 20px; 
-    background-color: #075ca1;
-    color: white;
+    margin-top: 20px;
+    position: relative;
+    padding: 60px 20px 20px 20px; 
     font-size: 18px;
 }
 
@@ -177,9 +177,7 @@ div.myPictureContainer{
 }
 
 .myPicture{
-    border-radius: 100px;
-    display: flex;
-    height: 150px;
+    height: 400px;
 }
 div.aboutMeLinks{
     display: flex;
@@ -187,27 +185,14 @@ div.aboutMeLinks{
     margin-top: 10px;
 }
 
-div.aboutMeLinks a{
-    outline-color: rgb(245, 255, 245);
-}
-
 .gitLink{
-    height: 50px;
-    box-shadow: 0px 6px 6px 2px #032f53;
-    margin-right: 5px;
-    border-radius: 10px;
-    background-color: #05ca7f;
-    padding: 5px;
+    height: 60px;
     
 }
 
 .cv{
-    height: 50px;
+    height: 60px;
     margin-left: 10px;
-    box-shadow: 0px 6px 6px 2px #032f53;
-    border-radius: 10px;
-    background-color: #05ca7f;
-    padding: 5px;
 }
 
 .descriptorText{
@@ -216,7 +201,7 @@ div.aboutMeLinks a{
 
 
 .gitLink:hover, .cv:hover{
-    background-color: #049e63;
+    height: 65px;
 
 }
 
@@ -228,18 +213,13 @@ div.aboutMeLinks a{
     background-color: #015736;
 }
 
-.gitLink:focus, .cv:focus{
-    border: 4px solid #043f6e;
-}
-
-
-
 /*********End of About Me*******************/
 
 
 /********************* Projects section ******************/
 #projects{
     padding: 20px;
+    background: rgb(246, 246, 246);
     
 }
 
@@ -258,21 +238,19 @@ div.aboutMeLinks a{
 }
 
 #projects a{
-    background-color: #07d687;
-    outline-color: rgb(18, 117, 230);
+    background-color: #00A82D;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: black;
+    font-weight: bold;  
     padding: 15px;
     border-radius: 6px;
-    box-shadow: 0px 4px 6px rgba(0,0,0, 0.2);
     display: inline-block;
     margin-top: 7px;
     font-size: 18px;
 }
 
 #projects a:hover{
-    background-color: #049e63;
+    background-color: #14CC45;
 }
 
 #projects a:active{
@@ -281,6 +259,10 @@ div.aboutMeLinks a{
         top: 3px;
         left: 3px;
         background-color: #015736;
+}
+
+#projects a:focus{
+    outline: black dashed 2px;
 }
 
 #projects p{
@@ -303,18 +285,17 @@ div.project1{
 /******************** Contact Me + Footer *********************/
 #contact{
     padding: 10px;
-    background-color: rgb(240, 240, 240);
 }
 
 footer{
     padding: 10px;
     border-bottom: none;
-    background-color: #044275;
+    background-color: black;
     color: white;
 }
 
 footer a:active, footer a:visited, footer a:link{
-    color: #0ada8a;
+    color: #14CC45;
 }
 
 

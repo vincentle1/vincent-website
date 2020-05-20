@@ -1,0 +1,155 @@
+/* Note: h1 = 32px, h2 = 24px, h3 = 18.72px
+Color scheme: e3e7af, 7ddf64, c2f9bb, 032325
+/* Box-sizing makes box calculated from margin + padding. */
+*{  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+
+/***************** Nav Bar *************************/
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    top: 0;
+    
+}
+/*header dimensions 759.2x53.4*/
+
+.nameAndButton{
+    background: linear-gradient(90deg, #044275 30%,#05ca7f);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.name{
+    padding-bottom: 2px;
+}
+
+.toggleButton{
+    z-index: 2;
+    font-size: 20px; 
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 9px 3px 9px;
+    cursor: pointer;
+}
+
+
+span{
+    display: none;
+}
+
+
+header li{
+    list-style-type: none;
+}
+
+header li a{
+    text-decoration: none;
+    padding: 5px 10px 5px 0px;
+    color: white;
+
+}
+
+header li a:active{
+    color: #05ca7f;
+}
+
+.links{
+    display: none;
+    height: 100vh;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.links li{ 
+    padding: 0px 0px 20px 20px;
+}
+
+
+/************************* JS Actions for Nav Bar ******************************/
+.closeAppear{
+
+    display: block;
+}
+
+.expand{
+    display: block;
+}
+
+.animate{
+    animation-name: fadein;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.disappear{
+    display: none;
+    
+}
+
+.invisible{
+    visibility: hidden;
+    
+}
+
+
+.removeBorder{
+    border: none;
+    background: none;
+}
+
+.grow{
+    margin: 0px;
+    padding: 6px 10px 6px 10px;
+    
+}
+
+.addShadow{
+    box-shadow:0px 3px 5px #032325c5;
+}
+
+.disableScroll{
+    overflow: hidden;
+    box-shadow: none;
+    touch-action: none;
+}
+
+
+/************************End of actions*******************************/
+/*Animation*/
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        background: linear-gradient(180deg, #044275 30%,#05ca7f);
+    }
+  }
+/***************** End of Nav Bar *****************/
