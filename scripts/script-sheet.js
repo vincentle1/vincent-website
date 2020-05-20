@@ -48,6 +48,8 @@ if ((window.scrollY >= nav_height) && (navLinks.classList.length <=2)){
 
 window.addEventListener("scroll", dropShadow);
 
+//Javascript smooth scroll//
+
 
 
 

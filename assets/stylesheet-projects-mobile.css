@@ -203,7 +203,7 @@ li{
 }
 
 h2{
-    text-decoration: underline solid black 3px;
+    -webkit-text-decoration: underline solid black 3px;
 }
 
 h3{
