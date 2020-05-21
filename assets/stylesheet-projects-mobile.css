@@ -232,30 +232,25 @@ h3{
 
 .moveBetweenProjects{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 .moveBetweenProjects a{
-    display: block;
     color: white;
-    width: 40%;
+    width: 50%;
     text-decoration: none;
     text-align: center;
     font-weight: bold;  
     padding: 15px;
     border-radius: 6px;
-    margin: 5px 20px 10px 20px;
+    margin: 5px 20px 20px 20px;
     font-size: 15px;
 }
 
 .next{
-    align-self: end;
-    -webkit-align-self: end;
     background: #00A82D;
 }
 
 .back{
-    -webkit-align-self: start;
-    align-self: start;
     background: rgb(56, 56, 56);
 }
 
