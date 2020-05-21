@@ -249,10 +249,12 @@ h3{
 
 .next{
     align-self: end;
+    -webkit-align-self: end;
     background: #00A82D;
 }
 
 .back{
+    -webkit-align-self: start;
     align-self: start;
     background: rgb(56, 56, 56);
 }
