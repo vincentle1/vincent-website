@@ -249,7 +249,6 @@ div.aboutMeLinks{
 }
 
 #projects a:active{
-        box-shadow: none;
         position: relative;
         top: 3px;
         left: 3px;
@@ -257,7 +256,7 @@ div.aboutMeLinks{
 }
 
 #projects a:focus{
-    outline: black dashed 2px;
+    outline: black dashed 0.5px;
 }
 
 #projects p{

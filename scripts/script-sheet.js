@@ -7,6 +7,7 @@ const close = document.querySelector("span");
 const name = document.querySelector(".name");
 const topBar = document.querySelector(".nameAndButton");
 const specificNavLinks = document.querySelectorAll(".links li a");
+const buffer = document.querySelector(".buffer");
 
 function toggleMenu(){
 
@@ -48,7 +49,7 @@ if ((window.scrollY >= nav_height) && (navLinks.classList.length <=2)){
 
 window.addEventListener("scroll", dropShadow);
 
-//Javascript smooth scroll//
+
 
 
 
