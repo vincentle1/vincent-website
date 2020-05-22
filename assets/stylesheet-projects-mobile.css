@@ -288,6 +288,7 @@ h3{
 .container1{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .actPic{
@@ -299,6 +300,7 @@ h3{
 .container2{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 /*****footer*****/
