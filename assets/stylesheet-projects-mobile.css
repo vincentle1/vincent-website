@@ -278,6 +278,25 @@ h3{
     background:black;
 }
 
+/***Pictures in body****/
+.cogPic{
+    width: 300px;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+}
+
+.actPic{
+    width: 300px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
 /*****footer*****/
 footer{
     padding: 10px;
