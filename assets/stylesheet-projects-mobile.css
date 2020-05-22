@@ -280,8 +280,9 @@ h3{
 
 /***Pictures in body****/
 .cogPic{
-    width: 150px;
+    width: 60%;
     height: auto;
+    flex-direction: column;
 }
 
 .container1{
@@ -290,8 +291,9 @@ h3{
 }
 
 .actPic{
-    width: 150px;
+    width: 60%;
     height: auto;
+    flex-direction: column;
 }
 
 .container2{
