@@ -15,10 +15,10 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
 }
-
+/**********************MOBILE STYLE ********************************/
+@media (max-width: 960px){
 
 /***************** Nav Bar *************************/
-@media (max-width: 960px){
 
 .desktopMenu{
     display: none;
@@ -32,14 +32,14 @@ header{
 }
 
 .nameAndButton{
-    background: white;
+    background: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
     padding-right: 20px;
-    font-weight: bold;
     font-size: 24px;
 }
 
@@ -50,6 +50,7 @@ header{
 .toggleButton{
     z-index: 2;
     font-size: 24px; 
+    border: 2px solid white;
     border-radius: 5px;
     padding: 5px 9px 3px 9px;
     cursor: pointer;
@@ -68,11 +69,11 @@ header li{
 header li a{
     text-decoration: none;
     padding: 5px 10px 5px 0px;
-    color: black;
+    color: white;
 }
 
 header li a:visited{
-    color: black;
+    color: white;
 }
 
 header li a:active{
@@ -133,7 +134,7 @@ header li a:active{
 }
 
 .addShadow{
-    box-shadow:0px 3px 5px #7c7c7cc5;
+    box-shadow:0px 3px 5px #222222c5;
 }
 
 .disableScroll{
@@ -153,7 +154,7 @@ header li a:active{
   
     to {
         opacity: 1;
-        background: white;
+        background: black;
     }
   }
 /***************** End of Nav Bar *****************/
@@ -329,8 +330,15 @@ footer a:active, footer a:visited, footer a:link{
 
 /******************** End of contact me and footer **************/
 }
+/******************** END MOBILE STYLE *************************/
+
+
+
+/******************** DESKTOP STYLE *****************************/
 
 @media (min-width: 961px){
+
+/************DESKTOP NAV BAR ***********************************/
 
 .mobileMenu{
     display: none;
@@ -341,49 +349,233 @@ footer a:active, footer a:visited, footer a:link{
     z-index: 1;
     top: 0px;
     width: 100%;
-    background: white;
+    background: black;
+    color: white;
 }
 
 nav.desktopNav{
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
+    padding: 15px 0px 15px 0px;
 }
 
 /* name*/
-nav.desktopNav a{
+nav.desktopNav .name{
     text-decoration: none;
-    padding: 10px 0px 10px 20px;
 }
 /* end name*/
 
 header li{
     list-style-type: none;
+    padding-right: 20px;
+
 }
 
 header li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header li a:visited, nav.desktopNav a:visited{
-    color: black;
+    color: white;
 }
 
-header li a:active, nav.desktopNav a:active{
+header li a:active, nav.desktopNav a:active, header li a:hover, nav.desktopNav a:hover{
     color: #00A82D;
 }
 
 nav.desktopNav ul{
     display: flex;
-    padding-top: 10px;
-    padding-right: 20px;
 }
 
 .addShadow{
-    box-shadow:0px 3px 5px #7c7c7cc5;
+    box-shadow:0px 3px 5px #222222c5;
 }
+
+
+
+/**************** END DESKTOP NAV BAR *************************************/
+/****ALL SECTIONS******/
+
+.allSections{
+}
+/****END ALL SECTIONS*******/
+/***********DESKTOP About Me*************************/
+#aboutMe{
+    position: relative;
+    font-size: 24px;
+    padding: 80px 200px 20px 200px;
+}
+
+#aboutMe p{
+    line-height: 1.5;
+}
+
+div.myPictureContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.myPicture{
+    height: 450px;
+}
+
+div.aboutMeLinks{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gitLink{
+    height: 70px;
+    
+}
+
+.cv{
+    height: 70px;
+    margin-left: 10px;
+}
+
+.descriptorText{
+    margin-top: 10px;
+}
+
+
+.gitLink:hover, .cv:hover{
+    height: 65px;
 
 }
 
+.gitLink:active, .cv:active{
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    background-color: #015736;
+}
+
+/*********DESKTOP End of About Me*******************/
+
+/********************* Projects section ******************/
+#projects{
+    padding: 30px 200px 20px 200px;
+    background: rgb(246, 246, 246);
+}
+
+.projectsExceptH2{
+    display: inline-grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects h2{
+    display: block;
+    font-size: 35px;
+}
+
+.picture1, .picture2, .picture3, .picture4{
+    display: inline-block;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 215px;
+
+}
+
+.picture1{
+    background-image: url("../assets/images/ptsd-poster/ptsd-poster.svg");
+}
+
+.picture2{
+    background-image: url("../assets/images/blog/Cover.png");
+}
+
+.picture3{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
+
+.picture4{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
+
+/*
+
+#projects h3{
+    font-size: 28px;
+    margin-top: 3px;
+}
+
+#projects a{
+    background-color: #00A82D;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;  
+    padding: 15px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.project4 a{
+    margin-bottom: 0px !important;
+}
+
+#projects a:hover{
+    background-color: #14CC45;
+}
+
+#projects a:active{
+        position: relative;
+        top: 3px;
+        left: 3px;
+        background-color: #015736;
+}
+
+#projects a:focus{
+    outline: black dashed 0.5px;
+}
+
+#projects p{
+    padding-top: 3px;
+    font-size: 24px;
+}
+
+div.project1{
+    margin-top: 20px !important;
+}
+
+#projects div{
+    margin-top: 10px;
+}
+
+.picture1, .picture2, .picture3, .picture4{
+    display: inline-block;
+    border-radius: 10px;
+    background-size: cover;
+    width: 30%;
+    height: 215px;
+
+}
+
+.picture1{
+    background-image: url("../assets/images/ptsd-poster/ptsd-poster.svg");
+}
+
+.picture2{
+    background-image: url("../assets/images/blog/Cover.png");
+}
+
+.picture3{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
+
+.picture4{
+    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+}
+*/
+
+}
+/****************END DESKTOP STYLE*****************************/
