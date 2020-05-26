@@ -37,32 +37,35 @@ specificNavLinks.forEach(function(navLink){
 
 
 /*Drop shadow on scroll*/
-//Offset-height returns height of element//
-const header_height = header.offsetHeight;
 
 const mobileMenu = document.querySelector(".mobileMenu");
 const desktopMenu = document.querySelector(".desktopMenu");
 
-function dropShadow(){
-if ((window.scrollY >= header_height) && (navLinks.classList.length <=2) && (getComputedStyle(desktopMenu).display == "none")) { 
-    topBar.classList.add("addShadow");
-} else {
-    topBar.classList.remove("addShadow");
+let mobileHeight = mobileMenu.offsetHeight;
+let desktopHeight = desktopMenu.offsetHeight;
+
+function mobileShadow(){
+if ((window.scrollY >= mobileHeight) && (mobileMenu.classList.length < 2) && (getComputedStyle(desktopMenu).display == "none")) { 
+    mobileMenu.classList.add("addShadow");
+} else if ((window.scrollY <= mobileHeight) && (mobileMenu.classList.length == 2) && (getComputedStyle(desktopMenu).display == "none")) {
+    mobileMenu.classList.remove("addShadow");
+    desktopMenu.classList.remove("addShadow");
 }
 }
 
 /*Desktop drop shadow*/
 
 function deskShadow(){
-    if ((window.scrollY >= header_height) && (desktopMenu.classList.length <=2) && (getComputedStyle(mobileMenu).display == "none")){
+    if ((window.scrollY >= desktopHeight) && (desktopMenu.classList.length < 2) && (getComputedStyle(mobileMenu).display == "none")){
         desktopMenu.classList.add("addShadow");
-    } else {
+    } else if ((window.scrollY <= desktopHeight) && (desktopMenu.classList.length == 2) && (getComputedStyle(mobileMenu).display == "none")){
         desktopMenu.classList.remove("addShadow");
+        mobileMenu.classList.remove("addShadow");
     }
 }
 /*End function*/
 
-window.addEventListener("scroll", dropShadow);
+window.addEventListener("scroll", mobileShadow);
 window.addEventListener("scroll", deskShadow);
 
 /*End Drop shadow on scroll*/
