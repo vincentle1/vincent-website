@@ -18,6 +18,12 @@ html{
 
 
 /***************** Nav Bar *************************/
+@media (max-width: 960px){
+
+.desktopMenu{
+    display: none;
+}
+
 header{
     position: fixed;
     z-index: 1;
@@ -322,3 +328,46 @@ footer a:active, footer a:visited, footer a:link{
 
 
 /******************** End of contact me and footer **************/
+}
+
+@media (min-width: 961px){
+
+.mobileMenu{
+    display: none;
+}
+
+nav.desktopNav{
+    display: flex;
+}
+
+nav.desktopNav a{
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header li{
+    list-style-type: none;
+}
+
+header li a{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    color: black;
+}
+
+header li a:visited, nav.desktopNav a:visited{
+    color: black;
+}
+
+header li a:active, nav.desktopNav a:active{
+    color: #00A82D;
+}
+
+nav.desktopNav ul{
+    display: flex;
+}
+
+}
+
