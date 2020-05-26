@@ -346,9 +346,9 @@ footer a:active, footer a:visited, footer a:link{
 
 nav.desktopNav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 /* name*/

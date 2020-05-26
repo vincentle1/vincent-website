@@ -33,34 +33,39 @@ toggleButton.addEventListener("click", toggleMenu);
 specificNavLinks.forEach(function(navLink){
     navLink.addEventListener("click", toggleMenu)});
 
+
+
+
 /*Drop shadow on scroll*/
 //Offset-height returns height of element//
-const nav_height = topBar.offsetHeight;
+const header_height = header.offsetHeight;
 
+const mobileMenu = document.querySelector(".mobileMenu");
+const desktopMenu = document.querySelector(".desktopMenu");
 
 function dropShadow(){
-if ((window.scrollY >= nav_height) && (navLinks.classList.length <=2)){
-    header.classList.add("addShadow");
+if ((window.scrollY >= header_height) && (navLinks.classList.length <=2) && (getComputedStyle(desktopMenu).display == "none")) { 
+    topBar.classList.add("addShadow");
 } else {
-    header.classList.remove("addShadow");
+    topBar.classList.remove("addShadow");
 }
 }
 
 /*Desktop drop shadow*/
 
-const desktopMenu = document.querySelector(".desktopMenu");
-const desktopNavHeight = desktopMenu.offsetHeight;
-
 function deskShadow(){
-    if ((window.scrollY >= desktopNavHeight) && (header.classList.length <=2)){
+    if ((window.scrollY >= header_height) && (desktopMenu.classList.length <=2) && (getComputedStyle(mobileMenu).display == "none")){
         desktopMenu.classList.add("addShadow");
-    } else{
+    } else {
         desktopMenu.classList.remove("addShadow");
     }
 }
+/*End function*/
 
 window.addEventListener("scroll", dropShadow);
 window.addEventListener("scroll", deskShadow);
+
+/*End Drop shadow on scroll*/
 
 
 
