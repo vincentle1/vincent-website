@@ -334,6 +334,25 @@ footer a:active, footer a:visited, footer a:link{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******************** DESKTOP STYLE *****************************/
 
 @media (min-width: 961px){
@@ -352,10 +371,14 @@ footer a:active, footer a:visited, footer a:link{
     background: black;
     color: white;
 }
+.desktopnavWrapper{
+    display: block;
+    padding: 0px 200px 0px 200px;
+}
 
 nav.desktopNav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 30px;
     padding: 15px 0px 15px 0px;
 }
@@ -370,6 +393,10 @@ header li{
     list-style-type: none;
     padding-right: 20px;
 
+}
+
+.contact{
+    padding-right: 0px !important;
 }
 
 header li a{
@@ -387,6 +414,7 @@ header li a:active, nav.desktopNav a:active, header li a:hover, nav.desktopNav a
 
 nav.desktopNav ul{
     display: flex;
+    justify-content: space-between;
 }
 
 .addShadow{
@@ -396,11 +424,7 @@ nav.desktopNav ul{
 
 
 /**************** END DESKTOP NAV BAR *************************************/
-/****ALL SECTIONS******/
 
-.allSections{
-}
-/****END ALL SECTIONS*******/
 /***********DESKTOP About Me*************************/
 #aboutMe{
     position: relative;
@@ -566,7 +590,8 @@ outline: black dashed 0.5px;
 
 /******************** DESKTOP Contact Me + Footer *********************/
 #contact{
-    padding: 10px 200px 10px 200px;
+    padding: 20px 200px 20px 200px;
+    font-size: 24px;
 }
 
 footer{

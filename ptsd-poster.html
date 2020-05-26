@@ -9,11 +9,7 @@
     <!--Link to font-awesome icons-->
     <script src="https://kit.fontawesome.com/2127b6ec58.js" crossorigin="anonymous"></script>
     <!--Link to mobile stylesheet-->
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="assets/stylesheet-projects-mobile.css">
-    <!--Link to desktop stylesheet-->
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1920px)" href="assets/stylesheet-desktop.css">
-    <!--Link to common stylesheet-->
-    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheet-all.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet-projects.css">
     <!--Link to font-->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Nunito:400,900" rel="stylesheet">
 
@@ -38,8 +34,9 @@
         </div>
     
   <div class="desktopMenu">
+    <div class="desktopnavWrapper">
     <nav class="desktopNav">
-    <a class="name" href='#aboutMe'>Vincent Le</a>  
+    <a class="name" href='index.html#aboutMe'>Vincent Le</a>  
       <ul>
         <li class="about"><a href="index.html#aboutMe">About</a></li>
         <li class="projects"><a href="index.html#projects">Projects</a></li>
@@ -47,21 +44,23 @@
       </ul>
     </nav>
     </div>
+  </div>
     
     </header>
 
     <section id="projectMainLinks">
       <h1>PTSD Research Project</h1>
-      <a href="assets/images/ptsd-poster/Poster.pdf">
-        <img class="projectMainPicture" src="assets/images/ptsd-poster/ptsd-poster.svg" 
+
+      <div class="flexPicContainer">
+      <a href="assets/images/ptsd-poster/Poster.pdf"><img class="projectMainPicture" src="assets/images/ptsd-poster/ptsd-poster.svg" 
         alt="Psychology conference poster for PTSD project"></a>
-      <!--For all links below, have it just open a new window on click
-        Link to github code-->
+      </div>
+
       <div class="linkContainer">
       <a href="https://github.com/vincentle1/PTSD-Project/blob/master/projectCode.R">Code</a>
       <!--Link to PDF of poster, use PDF picture-->
       <a href="assets/images/ptsd-poster/Poster.pdf">PDF of Poster</a>
-      <!--Link to full abstract of poster, just write out abstract-->
+      <!--Link to full abstract of poster-->
       <a href="assets/documents/Abstract.pdf">Abstract</a>
       </div>
     </section>
