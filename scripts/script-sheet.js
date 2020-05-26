@@ -7,7 +7,6 @@ const close = document.querySelector("span");
 const name = document.querySelector(".name");
 const topBar = document.querySelector(".nameAndButton");
 const specificNavLinks = document.querySelectorAll(".links li a");
-const buffer = document.querySelector(".buffer");
 
 function toggleMenu(){
 
@@ -41,13 +40,27 @@ const nav_height = topBar.offsetHeight;
 
 function dropShadow(){
 if ((window.scrollY >= nav_height) && (navLinks.classList.length <=2)){
-    topBar.classList.add("addShadow");
+    header.classList.add("addShadow");
 } else {
-    topBar.classList.remove("addShadow");
+    header.classList.remove("addShadow");
 }
 }
 
+/*Desktop drop shadow*/
+
+const desktopMenu = document.querySelector(".desktopMenu");
+const desktopNavHeight = desktopMenu.offsetHeight;
+
+function deskShadow(){
+    if ((window.scrollY >= desktopNavHeight) && (header.classList.length <=2)){
+        desktopMenu.classList.add("addShadow");
+    } else{
+        desktopMenu.classList.remove("addShadow");
+    }
+}
+
 window.addEventListener("scroll", dropShadow);
+window.addEventListener("scroll", deskShadow);
 
 
 
