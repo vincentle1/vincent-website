@@ -182,11 +182,12 @@ border-bottom: 2px solid black;
     color: white;
     text-decoration: none;
     font-weight: bold;  
-    padding: 15px;
+    padding: 12px;
     border-radius: 6px;
     display: inline-block;
     margin: 10px;
     font-size: 15px;
+    text-align: center;
 }
 
 .linkContainer a:hover{
@@ -368,7 +369,9 @@ nav.desktopNav{
 /* name*/
 nav.desktopNav .name{
     text-decoration: none;
+    color: white;
 }
+
 /* end name*/
 
 header li{
@@ -423,6 +426,7 @@ nav.desktopNav ul{
 
 .projectMainPicture{
     border-radius: 10px;
+    width: 100%;
 }
 
 .linkContainer{
