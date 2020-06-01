@@ -70,6 +70,22 @@ window.addEventListener("scroll", deskShadow);
 
 /*End Drop shadow on scroll*/
 
+/*Change project background photo depending on project*/
+let identifier = document.querySelector(".identifier");
+let picture = document.querySelector(".flexPicContainer");
+
+switch(identifier.id){
+    case "project1":
+        picture.style.backgroundImage = "url('../vincent-website/assets/images/ptsd-poster/ptsd-poster.svg')";
+        break;
+    case "project2":
+        picture.style.backgroundImage = "url('../vincent-website/assets/images/blog/Cover.png')";
+        break;
+
+}
+
+
+
 
 
 
