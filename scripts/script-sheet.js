@@ -74,12 +74,17 @@ window.addEventListener("scroll", deskShadow);
 let identifier = document.querySelector(".identifier");
 let picture = document.querySelector(".flexPicContainer");
 
+/* If project1 activate style for first project. If 2, activate style for 2. etc.*/
+
+
 switch(identifier.id){
     case "project1":
-        picture.style.backgroundImage = "url('../vincent-website/assets/images/ptsd-poster/ptsd-poster.svg')";
+        picture.classList.toggle("project1Pic"); 
+        //= "url('../vincent-website/assets/images/ptsd-poster/ptsd-poster.svg')";
         break;
     case "project2":
-        picture.style.backgroundImage = "url('../vincent-website/assets/images/blog/Cover.png')";
+        picture.classList.toggle("project2Pic");
+        //picture.style.backgroundImage = "url('../vincent-website/assets/images/blog/Cover.png')";
         break;
 
 }

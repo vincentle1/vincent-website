@@ -213,6 +213,16 @@ h1{
     font-size: 32px;
 }
 
+/****SPECIFIC PIC****/
+.project1Pic{
+    background-image: url("images/ptsd-poster/ptsd-poster.svg");
+}
+
+.project2Pic{
+    background-image: url("images/blog/Cover.png")  
+}
+
+
 /******End picture and links *********/
 
 /*****Body*******/
@@ -459,6 +469,15 @@ nav.desktopNav ul{
 
 h1{
     font-size: 35px;
+}
+
+/****SPECIFIC PIC****/
+.project1Pic{
+    background-image: url("images/ptsd-poster/ptsd-poster.svg");
+}
+
+.project2Pic{
+    background-image: url("images/blog/Cover.png")  
 }
 
 /******End DESKTOP picture and links *********/
