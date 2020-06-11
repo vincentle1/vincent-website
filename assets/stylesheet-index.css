@@ -413,6 +413,10 @@ header li a:active, nav.desktopNav a:active, header li a:hover, nav.desktopNav a
     color: #00A82D;
 }
 
+.name{
+    color: white;
+}
+
 nav.desktopNav ul{
     display: flex;
     justify-content: space-between;
