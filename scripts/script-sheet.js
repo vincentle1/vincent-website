@@ -86,6 +86,9 @@ switch(identifier.id){
         picture.classList.toggle("project2Pic");
         //picture.style.backgroundImage = "url('../vincent-website/assets/images/blog/Cover.png')";
         break;
+    case "project3":
+        picture.classList.toggle("project3Pic");
+        break;
 
 }
 

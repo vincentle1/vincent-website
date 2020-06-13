@@ -223,6 +223,11 @@ h1{
     background-size: contain;
 }
 
+.project3Pic{
+    background-image: url("images/hailey-paper/diverse-coworkers.jpg");
+    background-size: contain;
+}
+
 
 /******End picture and links *********/
 
@@ -254,6 +259,10 @@ h2{
 
 h3{
     font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
 }
 
 .moveBetweenProjects{
@@ -303,7 +312,7 @@ h3{
 }
 
 /***Pictures in body****/
-.cogPic{
+.pic1{
     width: 60%;
     height: auto;
     flex-direction: column;
@@ -315,7 +324,7 @@ h3{
     align-items: flex-start;
 }
 
-.actPic{
+.pic2{
     width: 60%;
     height: auto;
     flex-direction: column;
@@ -482,6 +491,12 @@ h1{
     background-size: contain;
 }
 
+.project3Pic{
+    background-image: url("images/hailey-paper/diverse-coworkers.jpg");
+    background-size: contain;
+}
+
+
 /******End DESKTOP picture and links *********/
 
 /*****Body DESKTOP*******/
@@ -513,6 +528,11 @@ h2{
 
 h3{
     font-size: 26px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+
 }
 
 .moveBetweenProjects{
@@ -562,7 +582,7 @@ h3{
 }
 
 /***DESKTOP Pictures in body****/
-.cogPic{
+.pic1{
     width: 30%;
     height: auto;
     flex-direction: column;
@@ -574,7 +594,7 @@ h3{
     align-items: flex-start;
 }
 
-.actPic{
+.pic2{
     width: 30%;
     height: auto;
     flex-direction: column;
