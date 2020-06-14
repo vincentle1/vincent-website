@@ -312,11 +312,6 @@ h3{
 }
 
 /***Pictures in body****/
-.pic1{
-    width: 60%;
-    height: auto;
-    flex-direction: column;
-}
 
 .container1{
     display: flex;
@@ -324,16 +319,35 @@ h3{
     align-items: flex-start;
 }
 
-.pic2{
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cogModel{
     width: 60%;
     height: auto;
     flex-direction: column;
 }
 
-.container2{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.actModel{
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+}
+
+.punnett1{
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+}
+
+
+.punnett2{
+    width: 80%;
+    height: auto;
+    flex-direction: column;
 }
 
 /*****footer*****/
