@@ -243,6 +243,7 @@ h1{
 
 p{
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 li{
@@ -259,10 +260,6 @@ h2{
 
 h3{
     font-size: 20px;
-    text-decoration-line: underline;
-    text-decoration-color: black;
-    text-decoration-style: solid;
-    text-decoration-thickness: 3px;
 }
 
 .moveBetweenProjects{
