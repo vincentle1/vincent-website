@@ -147,21 +147,34 @@ div.aboutMeLinks{
 /*********DESKTOP End of About Me*******************/
 
 /********************* Projects section ******************/
+
 #projects{
-    padding: 30px 200px 20px 200px;
+    padding: 30px 200px 0.01px 200px;
     background: rgb(246, 246, 246);
+}
+
+#projects h2{
+    font-size: 35px;
+    padding-bottom: 10px;
 }
 .project1, .project2, .project3, .project4{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
+.projectDescriptor{
+    display: inline-block;
+    width: 49%;
+}
 
 .picture1, .picture2, .picture3, .picture4{
     display: inline-block;
     border-radius: 10px;
     background-size: cover;
-    width: 500px;
-    height: 300px;
+    width: 49%;
+    height: 250px;
+    
 }
 
 .picture1{
