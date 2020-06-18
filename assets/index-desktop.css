@@ -150,44 +150,18 @@ div.aboutMeLinks{
 #projects{
     padding: 30px 200px 20px 200px;
     background: rgb(246, 246, 246);
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10px 4fr 4fr;
-    grid-template-areas: 
-    "header empty"
-    "project1 project2"
-    "project3 project4";
-    gap: 60px 60px;
+}
+.project1, .project2, .project3, .project4{
+    display: flex;
 }
 
-#projects h2{
-    grid-area: header/header-start/header-end;
-    font-size: 35px;
-}
-
-.project1{
-    grid-area: project1/project1-start/project1-end;
-}
-
-.project2{
-    grid-area: project2/project2-start/project2-end;
-}
-
-.project3{
-    grid-area: project3/project3-start/project3-end;
-}
-
-.project4{
-    grid-area: project4/project4-start/project4-end;
-}
 
 .picture1, .picture2, .picture3, .picture4{
     display: inline-block;
     border-radius: 10px;
     background-size: cover;
-    width: 100%;
+    width: 500px;
     height: 300px;
-
 }
 
 .picture1{
@@ -225,9 +199,7 @@ div.aboutMeLinks{
     text-align: center;
 }
 
-.project4 a.pageLink{
-    margin-top: 35px !important;
-}
+
 
 #projects a.pageLink:hover{
     background-color: #14CC45;
