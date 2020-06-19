@@ -249,6 +249,7 @@ div.aboutMeLinks{
     margin-top: 7px;
     margin-bottom: 30px;
     font-size: 18px;
+    box-shadow: 0px 3px 5px #969696c5;
 }
 
 .project4 a.pageLink{
@@ -267,7 +268,7 @@ div.aboutMeLinks{
 }
 
 #projects a.pageLink:focus{
-    outline: black dashed 0.5px;
+    background-color: #14CC45;
 }
 
 #projects p{

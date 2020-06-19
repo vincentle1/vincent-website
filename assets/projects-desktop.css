@@ -73,6 +73,11 @@ header li a:visited, nav.desktopNav a:visited{
     color: white;
 }
 
+header li a:focus, nav.desktopNav a:focus{
+    color: #00A82D;
+    outline: none;
+}
+
 header li a:active, nav.desktopNav a:active, header li a:hover, nav.desktopNav a:hover{
     color: #00A82D;
 }
@@ -98,7 +103,13 @@ nav.desktopNav ul{
     border-radius: 10px;
     width: 100%;
     height: 300px;
+    box-shadow: 0px 3px 3px #b8b8b8c5;
 }
+
+.flexPicContainer:focus{
+    box-shadow: 0px 5px 3px 2px #5c5c5cc5;
+}
+
 
 .linkContainer{
     display: flex;
@@ -114,7 +125,9 @@ nav.desktopNav ul{
     border-radius: 6px;
     display: inline-block;
     margin: 10px;
+    margin-top: 30px;
     font-size: 24px;
+    box-shadow: 0px 3px 3px #b8b8b8c5;
 }
 
 .linkContainer a:hover{
@@ -128,7 +141,7 @@ nav.desktopNav ul{
     background-color: #015736;
 }
 .linkContainer a:focus{
-    outline: black dashed 0.5px;
+    background-color: #14CC45;
 }
 
 h1{
@@ -190,6 +203,7 @@ h3{
     display: flex;
     justify-content: space-between;
     padding: 10px 200px 10px 200px;
+    
 }
 .moveBetweenProjects a{
     color: white;
@@ -200,6 +214,7 @@ h3{
     padding: 30px;
     border-radius: 6px;
     font-size: 24px;
+    box-shadow: 0px 3px 5px #969696c5;
 }
 
 .next{

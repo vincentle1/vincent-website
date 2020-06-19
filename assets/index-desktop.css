@@ -69,6 +69,11 @@ header li a:visited, nav.desktopNav a:visited{
     color: white;
 }
 
+header li a:focus, nav.desktopNav a:focus{
+    color: #00A82D;
+    outline: none;
+}
+
 header li a:active, nav.desktopNav a:active, header li a:hover, nav.desktopNav a:hover{
     color: #00A82D;
 }
@@ -116,14 +121,42 @@ div.aboutMeLinks{
     margin-top: 10px;
 }
 
+.linkContainer{
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+}
+
+
+.linkContainer:focus{
+    box-shadow: 0px 3px 5px #5f5f5fc5; 
+}
+
+
+.linkContainer:hover{
+    box-shadow: 0px 3px 5px #5f5f5fc5; 
+
+}
+
+.linkContainer:active{
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
 .gitLink{
     height: 70px;
-    
+    outline-style: none;
 }
 
 .cv{
     height: 70px;
-    margin-left: 10px;
+    outline-style: none;
+}
+
+.gitLink:focus, .cv:focus {
+    outline: none;
 }
 
 .descriptorText{
@@ -131,18 +164,8 @@ div.aboutMeLinks{
 }
 
 
-.gitLink:hover, .cv:hover{
-    height: 65px;
 
-}
 
-.gitLink:active, .cv:active{
-    box-shadow: none;
-    position: relative;
-    top: 3px;
-    left: 3px;
-    background-color: #015736;
-}
 
 /*********DESKTOP End of About Me*******************/
 
@@ -157,6 +180,23 @@ a.projectPic{
     width: 49%;
     box-shadow: 0px 3px 5px #969696c5;
     border-radius: 10px;
+}
+
+a.projectPic:focus{
+    outline: none;
+    box-shadow: 0px 5px 3px 2px #5c5c5cc5;
+
+}
+
+a.projectPic:hover{
+    box-shadow: 0px 5px 5px #3a3a3ac5;
+}
+
+a.projectPic:active{
+    position: relative;
+    box-shadow: none;
+    top: 6px;
+    left: 6px;
 }
 
 #projects h2{
@@ -216,6 +256,7 @@ a.projectPic{
     font-size: 20px;
     width: 50%;
     text-align: center;
+    box-shadow: 0px 3px 5px #969696c5;
 }
 
 
@@ -227,18 +268,20 @@ a.projectPic{
 
 #projects a.pageLink:active{
     position: relative;
-    top: 3px;
-    left: 3px;
+    top: 6px;
+    left: 6px;
     background-color: #015736;
+    box-shadow: none;
 }
 
 #projects a.pageLink:focus{
-outline: black dashed 0.5px;
+background-color: #14CC45;
 }
 
 #projects p{
     padding-top: 3px;
     font-size: 24px;
+
 }
 /**************END DESKTOP PROJECTS*************/
 
