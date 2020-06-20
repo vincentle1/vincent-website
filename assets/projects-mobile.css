@@ -173,7 +173,7 @@ border-bottom: 2px solid black;
     border-radius: 10px;
     width: 100%;
     height: 300px;
-    box-shadow: 0px 3px 3px #b1b1b1c5;
+    box-shadow: 0px 3px 3px #ebebebc5;
 
 }
 
@@ -187,13 +187,14 @@ border-bottom: 2px solid black;
     color: white;
     text-decoration: none;
     font-weight: bold;  
-    padding: 12px;
+    padding: 13px;
     border-radius: 6px;
     display: inline-block;
     margin: 10px;
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 14px;
     text-align: center;
-    box-shadow: 0px 3px 5px #b9b9b9c5;
+    box-shadow: 0px 3px 5px #ddddddc5;
 }
 
 .linkContainer a:hover{
