@@ -351,6 +351,12 @@ h3{
     flex-direction: column;
 }
 
+.sketchPencil{
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+}
+
 /*****footer*****/
 footer{
     padding: 10px;
