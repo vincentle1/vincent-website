@@ -223,7 +223,7 @@ h1{
 
 .project2Pic{
     background-image: url("images/blog/Cover.jpg");  
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
