@@ -222,14 +222,18 @@ h1{
 }
 
 .project2Pic{
-    background-image: url("images/blog/Cover.png");
+    background-image: url("images/blog/Cover.jpg");  
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project3Pic{
-    background-image: url("images/hailey-paper/diverse-coworkers.jpg");
-    background-size: contain;
+    background-image: url("images/hailey-paper/chu-picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 
 /******End picture and links *********/

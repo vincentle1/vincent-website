@@ -103,7 +103,7 @@ nav.desktopNav ul{
     border-radius: 10px;
     width: 100%;
     height: 400px;
-    box-shadow: 0px 3px 5px #dbdbdbc5;
+    box-shadow: 0px 3px 5px #b8b8b8c5;
 }
 
 .flexPicContainer:focus{
@@ -157,13 +157,16 @@ h1{
 }
 
 .project2Pic{
-    background-image: url("images/blog/Cover.png");  
-    background-size: contain;
+    background-image: url("images/blog/Cover.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project3Pic{
-    background-image: url("images/hailey-paper/diverse-coworkers.jpg");
-    background-size: contain;
+    background-image: url("images/hailey-paper/chu-picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
