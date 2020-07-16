@@ -234,6 +234,13 @@ h1{
     background-repeat: no-repeat;
 }
 
+.project4Pic{
+    background-image: url("../assets/images/website/frog-cropped.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 
 /******End picture and links *********/

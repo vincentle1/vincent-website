@@ -237,7 +237,7 @@ a.projectPic:active{
 }
 
 .picture4{
-    background-image: url("../assets/images/hailey-paper/diverse-coworkers.jpg");
+    background-image: url("../assets/images/website/frog-cropped.jpg");
 }
 
 #projects h3{
@@ -257,14 +257,14 @@ a.projectPic:active{
     font-size: 20px;
     width: 50%;
     text-align: center;
-    box-shadow: 0px 3px 5px #b6b6b6c5;
+    box-shadow: 0px 3px 5px #9e9e9ec5;
 }
 
 
 
 #projects a.pageLink:hover{
     background-color: #14CC45;
-    box-shadow: 0px 3px 5px #969696c5;
+    box-shadow: 0px 3px 5px #808080c5;
 }
 
 
