@@ -34,7 +34,8 @@ html{
 }
 .desktopnavWrapper{
     display: block;
-    padding: 0px 200px 0px 200px;
+    padding: 0px 400px 0px 400px;
+    padding: 0px 20% 0px 20%;
 }
 
 nav.desktopNav{
@@ -99,7 +100,8 @@ nav.desktopNav ul{
 #aboutMe{
     position: relative;
     font-size: 24px;
-    padding: 80px 200px 20px 200px;
+    padding: 80px 400px 20px 400px;
+    padding: 80px 20% 20px 20%;
 }
 
 #aboutMe p{
@@ -172,7 +174,8 @@ div.aboutMeLinks{
 /********************* Projects section ******************/
 
 #projects{
-    padding: 20px 200px 10px 200px;
+    padding: 20px 400px 10px 400px;
+    padding: 20px 20% 10px 20%;
     background: rgb(246, 246, 246);
 
 }
@@ -253,7 +256,7 @@ a.projectPic:active{
     padding: 15px;
     border-radius: 6px;
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 10px;
     font-size: 20px;
     width: 50%;
     text-align: center;
@@ -281,8 +284,9 @@ background-color: #14CC45;
 }
 
 #projects p{
-    padding-top: 3px;
+    padding-top: 5px;
     font-size: 24px;
+    color: rgb(39, 39, 39);
 
 }
 /**************END DESKTOP PROJECTS*************/
@@ -291,7 +295,8 @@ background-color: #14CC45;
 
 /******************** DESKTOP Contact Me + Footer *********************/
 #contact{
-    padding: 20px 200px 20px 200px;
+    padding: 20px 400px 20px 400px;
+    padding: 20px 20% 10px 20%;
     font-size: 24px;
 }
 
@@ -300,7 +305,8 @@ background-color: #14CC45;
 }
 
 footer{
-    padding: 10px 200px 10px 200px;
+    padding: 10px 400px 10px 400px;
+    padding: 20px 20% 10px 20%;
     border-bottom: none;
     background-color: black;
     color: white;
