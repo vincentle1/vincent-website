@@ -218,7 +218,7 @@ h1{
 /****SPECIFIC PIC****/
 .project1Pic{
     background-image: url("images/ptsd-poster/ptsd-poster.svg");
-    background-size: contain;
+    background-size: cover;
 }
 
 .project2Pic{
