@@ -94,7 +94,7 @@ nav.desktopNav ul{
     
 /*********DESKTOP picture and links*******/
 #projectMainLinks{
-    padding: 60px 200px 20px 200px;
+    padding: 100px 20% 20px 20%;
     border-bottom: 2px solid black;
 }
 
@@ -153,7 +153,7 @@ h1{
 /****SPECIFIC PIC****/
 .project1Pic{
     background-image: url("images/ptsd-poster/ptsd-poster.svg");
-    background-size: contain;
+    background-size: cover;
 }
 
 .project2Pic{
@@ -180,7 +180,7 @@ h1{
 
 /*****Body DESKTOP*******/
 #bodyText{
-    padding: 30px 200px 20px 200px;
+    padding: 30px 20% 20px 20%;
     line-height: 1.5;
 }
 
@@ -213,7 +213,7 @@ h3{
 .moveBetweenProjects{
     display: flex;
     justify-content: space-between;
-    padding: 10px 200px 10px 200px;
+    padding: 10px 20% 10px 20%;
     
 }
 .moveBetweenProjects a{
