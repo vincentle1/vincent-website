@@ -259,6 +259,11 @@ h3{
     background:black;
 }
 
+#bullets li{
+    list-style: disc;
+    font-size: 24px;
+}
+
 /***DESKTOP Pictures in body****/
 
 .container1{
