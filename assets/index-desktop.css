@@ -207,7 +207,7 @@ a.projectPic:active{
     font-size: 38px;
     padding-bottom: 50px;
 }
-.project1, .project2, .project3, .project4{
+.project1, .project2, .project3, .project4, .project5{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
@@ -218,7 +218,7 @@ a.projectPic:active{
     width: 49%;
 }
 
-.picture1, .picture2, .picture3, .picture4{
+.picture1, .picture2, .picture3, .picture4, .picture5{
     display: inline-block;
     border-radius: 10px;
     background-size: cover;
@@ -241,6 +241,10 @@ a.projectPic:active{
 
 .picture4{
     background-image: url("../assets/images/website/frog-cropped.jpg");
+}
+
+.picture5{
+    background-image: url("../assets/images/okado/okado-poster.svg")
 }
 
 #projects h3{

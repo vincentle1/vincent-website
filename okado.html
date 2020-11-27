@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>PTSD Poster</title>
+    <title>Stress Reduction Poster</title>
     <!--Normalize-->
     <link rel="stylesheet" href="assets/normalize.css">
     <!--Link to font-awesome icons-->
@@ -34,7 +34,7 @@
               <ul class="links">
               <li class="about"><a href="index.html#aboutMe">About Me</a></li>
               <li class="projects"><a href="index.html#projects">Projects</a></li>
-              <li class="contact"><a href="index.html#contact">Contact</a></li>
+             
               </ul>
           </nav>
         </div>
@@ -46,7 +46,7 @@
       <ul>
         <li class="about"><a href="index.html#aboutMe">About Me</a></li>
         <li class="projects"><a href="index.html#projects">Projects</a></li>
-        <li class="contact"><a href="index.html#contact">Contact</a></li>
+      
       </ul>
     </nav>
     </div>
@@ -54,81 +54,76 @@
     
     </header>
 
-    <span class="identifier" id="project1"></span>
+    <span class="identifier" id="project5"></span>
 
     <section id="projectMainLinks">
-      <h1>PTSD Research Project</h1>
+      <h1>Stress Reduction Poster</h1>
 
-      <a class="mainPicContainer" href="assets/images/ptsd-poster/Poster.pdf"><div class="flexPicContainer"></div></a>
+      <a class="mainPicContainer" href="assets/images/okado/coach-poster.pdf"><div class="flexPicContainer"></div></a>
 
       <div class="linkContainer">
-      <a href="https://github.com/vincentle1/PTSD-Project/blob/master/projectCode.R">Code</a>
       <!--Link to PDF of poster, use PDF picture-->
-      <a href="assets/images/ptsd-poster/Poster.pdf">PDF of Poster</a>
-      <!--Link to full abstract of poster-->
-      <a href="assets/documents/Abstract.pdf">Abstract</a>
+      <a href="assets/images/okado/coach-poster.pdf">PDF of Poster</a>
       </div>
     </section>
 
       <div id="bodyText">
-      <p>I created a published poster presentation exploring potential predictors of PTSD
-        symptom severity.</p>
+      <p>I co-authored a published poster presentation on short digital stress-reduction interventions for college students.
+      </p>
       <h2>Background</h2>
-      <p> There are various psychological theories that attempt to explain the severity of symptoms in 
-        those afflicted by Posttraumatic Stress Disorder (PTSD). </p>
-      <ul>
-        <li>
-          <h3>A. The Cognitive Model</h3>
+      <p> A significant portion of college students face high levels of stress. In this study, 
+        we tested two types of brief, online mental health interventions along with a control intervention 
+        to see if they could reduce self-rated scores about stress-inducing negative thoughts. How did this work? </p>
+
+        <p>Well, let’s pretend that you’re a college student studying for a test, 
+          and suddenly an automatic negative thought pops in your head. 
+          The thought is: “If I fail this test, my future is ruined.” 
+          Let’s see how each of the interventions in the study would teach you to handle this thought.
+        </p>
+
           <div class="container1">
           <img class="cogModel" src="assets/images/ptsd-poster/cog-model-ptsd.jpg" 
           alt="drawing of sad person having irrational thoughts">
           </div>
-          <p>One such theory is the cognitive model, which argues that following a traumatic 
-            event, PTSD sufferers gain irrational beliefs about the world. 
-            Individuals with PTSD might see the world as an impossibly dangerous 
-            place, and they might conclude that they are incapable of facing it. 
-            These beliefs perpetuate their symptoms.</p>
-          </li>
-        <li>
-          <h3>B. The ACT Model</h3>
-          <div class="container2">
-            <img class="actModel" src="assets/images/ptsd-poster/act-model-picture.jpg" 
-            alt="drawing of sad person moving away from aversive situations">
+          <p>In the Defusion intervention, you would learn from a short video to let the thought simply pass through 
+            your mind without assigning any importance or acting on it. This is kind of like a Buddhist monk way of handling things. 
+          </p>
+
+          <div class="container1">
+            <img class="cogModel" src="assets/images/ptsd-poster/cog-model-ptsd.jpg" 
+            alt="drawing of sad person having irrational thoughts">
             </div>
-          <p>A competing theory is the ACT model, which claims that experiential avoidance is 
-            the primary cause of psychological distress in PTSD sufferers. 
-            Experiential avoidance is defined as “the attempt to alter the form, frequency, or 
-            situational sensitivity of difficult private events, even when doing so leads to 
-            actions that are inconsistent with one’s values and goals.” In other words, the 
-            ACT model says that because PTSD sufferers avoid triggers of the trauma, this 
-            actually increases the severity of their symptoms.</p>
-          </li>
-        </ul>
-      <p class="hypothesis">The question is, does experiential avoidance from the ACT model play any role in 
-        predicting PTSD symptom severity once you’ve already controlled for irrational beliefs? 
-        This is the question I set out to answer.</p>
+          <p>In the Restructuring intervention, you would learn from a short video to challenge the thought with counter-arguments 
+            and weigh evidence for the thought accordingly. This is kind of like a lawyer way of handling things.
+          </p>
+
+          <div class="container1">
+            <img class="cogModel" src="assets/images/ptsd-poster/cog-model-ptsd.jpg" 
+            alt="drawing of sad person having irrational thoughts">
+            </div>
+          <p>In the control intervention, you would simply freely write about your thought. This is kind of like a teenager way 
+            of handling things.
+          </p>
+          
+      <p class="hypothesis">So which intervention works the best for reducing stress?</p>
+
       <h2>Research</h2>
-      <p>I used an existing dataset from professor Christine D. Scher at California State University, Fullerton. 
-        Previously, she had surveyed students at Cal State Fullerton who all met criteria for experiencing a 
-        traumatic event. She had them complete self-report measures of experiential avoidance (ACT Model) and 
-        maladaptive beliefs (Cognitive Model). I took the data, and cleaned it in R 
-        (I actually learned how to program with R for this project). You can see all of the code 
-        on the GitHub link at the top of the page. I then ran statistical analyses. You can find 
-        my results in the poster and linked abstract!</p>
+      <p>We had three separate groups of students for each type of intervention. After they all watched a brief video tutorial on 
+        stress or their intervention, once a day they were asked to apply the intervention on a negative thought about the most 
+        stressful event they had that day. They then rated the negative thought on several axes which we won’t get into here. </p>
+
+      <p>Long story short, the Restructuring (lawyer) intervention showed no significant reduction in their ratings of 
+        stressful negative thoughts, while the Defusion (Monk) and the control (teenager) interventions were successful in 
+        reducing ratings of stressful negative thoughts. How interesting!</p>
+
       <h2>Communication</h2>
-      <p>I focused on making the research poster as clear and readable as possible. To do this, I focused on writing succinctly.
-        I also chose a simple, eye-catching color scheme with plenty of white space for enhanced readability.
-        Finally, I kept columns spaced as far apart as possible so that the reader’s eyes would naturally flow 
-        down a column without being attracted to lateral text from other columns.</p>
-
-      <p>I gleaned some of these design tips from basic cognitive gestalt principles, and the rest from my gut. Because I have had no formal 
-        training in visual design, I hope to patch up this hole in my skillset by attending an HCI program.</p>
-
-    <p>That’s it! Hope you enjoy looking through my research!</p>
+      <p>This poster is less decipherable than the PTSD one. My collaborator and I were required to fit a lot of information into the poster, and 
+        as a result I found we found it difficult to make it readable. I hope that an HCI degree can teach me how to visually convey dense 
+        information more effectively. </p>
     </div>
 
 <div class="moveBetweenProjects">
-<a class="back" href="index.html">Go Home</a>
+  <a class="back" href="ptsd-poster.html">Previous Project</a>
 <a class="next" href="blogposts.html">Next Project</a>
 </div>
 

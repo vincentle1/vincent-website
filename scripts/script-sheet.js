@@ -92,6 +92,9 @@ switch(identifier.id){
     case "project4":
         picture.classList.toggle("project4Pic");
         break;
+    case "project5":
+        picture.classList.toggle("project5Pic");
+        break;
 
 }
 

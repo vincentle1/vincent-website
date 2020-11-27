@@ -284,7 +284,7 @@ div.project1{
     margin-top: 10px;
 }
 
-.picture1, .picture2, .picture3, .picture4{
+.picture1, .picture2, .picture3, .picture4, .picture5{
     display: inline-block;
     border-radius: 10px;
     background-size: cover;
@@ -307,6 +307,10 @@ div.project1{
 
 .picture4{
     background-image: url("../assets/images/website/frog-cropped.jpg");
+}
+
+.picture5{
+    background-image: url("../assets/images/okado/okado-poster.svg")
 }
 /******************* End of Projects Section *************/
 

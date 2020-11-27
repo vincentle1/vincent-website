@@ -175,6 +175,11 @@ h1{
     background-repeat: no-repeat;
 }
 
+.project5Pic{
+    background-image: url("images/okado/okado-poster.svg");
+    background-size: cover;
+}
+
 
 /******End DESKTOP picture and links *********/
 
