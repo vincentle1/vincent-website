@@ -314,6 +314,12 @@ h3{
     flex-direction: column;
 }
 
+.socrates, .monk, .teen{
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+}
+
 /*****DESKTOP footer*****/
 footer{
     padding: 10px 200px 10px 200px;
